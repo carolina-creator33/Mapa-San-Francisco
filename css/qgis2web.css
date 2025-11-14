@@ -193,4 +193,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
-        }
+
+        }/* ===== PERSONALIZACIÓN DE HOVER PARA PADRONES ===== */
+
+path.leaflet-interactive:hover,
+.leaflet-interactive:hover {
+    fill: none !important;          /* Sin relleno */
+    fill-opacity: 0 !important;     /* Relleno totalmente transparente */
+    background: none !important;    /* Evitar fondo */
+    
+    stroke: #000000 !important;     /* Color del borde */
+    stroke-width: 2.5px !important; /* Grosor del borde */
+    stroke-opacity: 1 !important;   /* Borde opaco */
+}
